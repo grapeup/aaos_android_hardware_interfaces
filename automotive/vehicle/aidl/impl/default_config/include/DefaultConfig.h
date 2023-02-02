@@ -1232,7 +1232,7 @@ const std::vector<ConfigDeclaration> kVehicleProperties = {
                     .access = VehiclePropertyAccess::READ_WRITE,
                     .changeMode = VehiclePropertyChangeMode::ON_CHANGE,
                     .configArray = {toInt(VehicleUnit::FAHRENHEIT), toInt(VehicleUnit::CELSIUS)}},
-         .initialValue = {.int32Values = {toInt(VehicleUnit::FAHRENHEIT)}}},
+         .initialValue = {.int32Values = {toInt(VehicleUnit::CELSIUS)}}},
 
         {.config =
                  {
@@ -1242,7 +1242,7 @@ const std::vector<ConfigDeclaration> kVehicleProperties = {
                          .areaConfigs = {VehicleAreaConfig{.areaId = (0)}},
                          .configArray = {toInt(VehicleUnit::KILOMETER), toInt(VehicleUnit::MILE)},
                  },
-         .initialValue = {.int32Values = {toInt(VehicleUnit::MILE)}}},
+         .initialValue = {.int32Values = {toInt(VehicleUnit::KILOMETER)}}},
 
         {.config =
                  {
